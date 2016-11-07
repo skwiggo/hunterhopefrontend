@@ -52454,7 +52454,7 @@
 /***/ function(module, exports) {
 
 	angular.module('hunterHope').controller('BlogCtrl', ["$scope", "$http", function($scope, $http) {
-	      $http.get("http://localhost:5000/blogposts")
+	      $http.get("https://sheltered-fjord-80898.herokuapp.com/blogposts")
 	      .then(function(response) {
 	          $scope.posts = response.data;
 	      });
@@ -52468,7 +52468,7 @@
 /***/ function(module, exports) {
 
 	angular.module('hunterHope').controller('MusicCtrl', ["$scope", "$http", function($scope, $http) {
-	      $http.get("http://localhost:5000/releases")
+	      $http.get("https://sheltered-fjord-80898.herokuapp.com/releases")
 	      .then(function(response) {
 	          $scope.releases = response.data;
 	      });
@@ -52483,7 +52483,7 @@
 /***/ function(module, exports) {
 
 	angular.module('hunterHope').controller('TourCtrl', ["$scope", "$http", 'NgMap', function($scope, $http, NgMap) {
-	      $http.get("http://localhost:5000/tourdates")
+	      $http.get("https://sheltered-fjord-80898.herokuapp.com/tourdates")
 	      .then(function(response) {
 	          $scope.tourDates = response.data;
 	      })
@@ -52503,7 +52503,7 @@
 /***/ function(module, exports) {
 
 	angular.module('hunterHope').controller('PhotosCtrl', ["$scope", "$http", function($scope, $http) {
-	      $http.get("http://localhost:5000/photos")
+	      $http.get("https://sheltered-fjord-80898.herokuapp.com/photos")
 	      .then(function(response) {
 	          $scope.photos = response.data;
 	      });
